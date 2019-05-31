@@ -1,6 +1,25 @@
-.resultAreaContainer{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 100px;
+.resultAreaContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 100px;
+  align-items: flex-end;
+  width: 100%;
+  //   // background-color: red;
+  //   // overflow-x: unset;
+  //   padding: 10px;
+  //   box-sizing: border-box;
+}
+
+.loadMore {
+  background: linear-gradient(90deg, rgba(243, 72, 104,1) 20.5625%,rgba(242, 71, 104,1) 20.5625%,rgba(158, 0, 236,1) 80.5625%);
+  width: 200px;
+  height: 60px;
+  box-shadow: 0 0 13px 0px #00000036;
+  border-radius: 20px;
+  border: 0;
+  font-size: 20px;
+  outline: none;
+  color: white;
+  cursor: pointer;
 }

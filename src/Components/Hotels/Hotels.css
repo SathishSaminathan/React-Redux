@@ -1,9 +1,66 @@
 .hotelContainer {
-  width: 280px;
+  min-width: 280px;
+  max-width: 280px;
   height: 380px;
   margin: 10px;
   border-radius: 10px;
   -webkit-box-shadow: 0 0 23px 1px #52525252;
           box-shadow: 0 0 23px 1px #52525252;
+  -webkit-animation: fadeIn 0.5s ease-in;
+          animation: fadeIn 0.5s ease-in;
+  white-space: initial;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+}
+
+.hotelContainer .imageContainer {
+  position: relative;
+}
+
+.hotelContainer .imageContainer .image {
+  width: 280px;
+  height: 200px;
+  -webkit-filter: blur(2px);
+}
+
+.hotelContainer .imageContainer .hotelName {
+  position: absolute;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  top: 30%;
+  left: 10px;
+  z-index: 1;
+}
+
+.hotelContainer .detailsArea .area,
+.hotelContainer .detailsArea .city {
+  font-size: 20px;
+  padding: 10px;
+}
+
+.hotelContainer .ratingArea {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=Hotels.css.map */

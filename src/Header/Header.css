@@ -17,6 +17,7 @@
           box-shadow: 0 0 30px 8px #0000000d;
   border-radius: 30px;
   position: relative;
+  margin-top: 10px;
 }
 
 .inputContainer .inputArea input {
