@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import './ResultArea.css'
+import "./ResultArea.css";
 import Hotels from "../Hotels";
 
 class ResultArea extends Component {
@@ -8,14 +8,9 @@ class ResultArea extends Component {
     dataSource: []
   };
 
-  componentDidMount() {
-    console.log("this.state.dataSource", this.state.dataSource);
-  }
-
   componentWillReceiveProps(nextProps) {
     if (nextProps.dataSource !== this.state.dataSource) {
       this.setState({ dataSource: nextProps.dataSource });
-      console.log("componentWillReceiveProps", this.state.dataSource);
     }
   }
 
@@ -24,16 +19,17 @@ class ResultArea extends Component {
     const { dataSource } = this.state;
 
     dataSource.map((hotel, index) => {
-      hotelTemplate.push(<Hotels key={index} hotelDetails={hotel}/>);
+      hotelTemplate.push(<Hotels key={index} hotelDetails={hotel} />);
     });
     return hotelTemplate;
   };
 
   render() {
     return (
-      <div className='resultAreaContainer'>
+      <div className="resultAreaContainer">
         {/* Results:{ JSON.stringify(this.state.dataSource)} */}
         {this.displayHotels()}
+        {/* <Hotels key={1} hotelDetails={{}} /> */}
       </div>
     );
   }

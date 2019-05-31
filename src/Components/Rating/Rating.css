@@ -1,0 +1,10 @@
+.active {
+  color: yellow;
+}
+
+.star_styles {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  font-size: 30px;
+}
+/*# sourceMappingURL=Rating.css.map */

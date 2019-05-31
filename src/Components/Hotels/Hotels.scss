@@ -1,8 +1,52 @@
-.hotelContainer{
-    width: 280px;
-    height: 380px;
-    // background-color: tomato;
-    margin: 10px;
-    border-radius: 10px;
-    box-shadow: 0 0 23px 1px #52525252;
+.hotelContainer {
+  min-width: 280px;
+  max-width: 280px;
+  height: 380px;
+  // background-color: tomato;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 23px 1px #52525252;
+  animation: fadeIn 0.5s ease-in;
+  white-space: initial;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  .imageContainer {
+    position: relative;
+    .image {
+      width: 280px;
+      height: 200px;
+      -webkit-filter: blur(2px);
+    }
+    .hotelName {
+      position: absolute;
+      color: white;
+      font-size: 30px;
+      font-weight: bold;
+      top: 30%;
+      left: 10px;
+      z-index: 1;
+    }
+  }
+  .detailsArea {
+    .area,
+    .city {
+      font-size: 20px;
+      padding: 10px;
+    }
+  }
+  .ratingArea{
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

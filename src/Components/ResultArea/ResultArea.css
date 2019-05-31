@@ -4,9 +4,28 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   margin-top: 100px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 100%;
+}
+
+.loadMore {
+  background: -webkit-gradient(linear, left top, right top, color-stop(20.5625%, #f34868), color-stop(20.5625%, #f24768), color-stop(80.5625%, #9e00ec));
+  background: linear-gradient(90deg, #f34868 20.5625%, #f24768 20.5625%, #9e00ec 80.5625%);
+  width: 200px;
+  height: 60px;
+  -webkit-box-shadow: 0 0 13px 0px #00000036;
+          box-shadow: 0 0 13px 0px #00000036;
+  border-radius: 20px;
+  border: 0;
+  font-size: 20px;
+  outline: none;
+  color: white;
+  cursor: pointer;
 }
 /*# sourceMappingURL=ResultArea.css.map */
