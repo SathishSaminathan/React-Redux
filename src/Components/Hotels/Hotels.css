@@ -1,0 +1,9 @@
+.hotelContainer {
+  width: 280px;
+  height: 380px;
+  margin: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 23px 1px #52525252;
+          box-shadow: 0 0 23px 1px #52525252;
+}
+/*# sourceMappingURL=Hotels.css.map */

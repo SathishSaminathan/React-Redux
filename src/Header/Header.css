@@ -1,0 +1,68 @@
+.inputContainer {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0 0 0 0;
+  position: fixed;
+  top: 0;
+  background-color: white;
+}
+
+.inputContainer .inputArea {
+  width: 50%;
+  display: inline-block;
+  background-color: white;
+  -webkit-box-shadow: 0 0 30px 8px #0000000d;
+          box-shadow: 0 0 30px 8px #0000000d;
+  border-radius: 30px;
+  position: relative;
+}
+
+.inputContainer .inputArea input {
+  width: 90%;
+  height: 50px;
+  border: 0;
+  background: none;
+  outline: none;
+  padding: 10px;
+  font-size: 30px;
+  padding: 10px 20px;
+  float: left;
+}
+
+.inputContainer .inputArea .spinner {
+  width: 40px;
+  height: 40px;
+  border: 10px solid #0000000d;
+  position: absolute;
+  border-radius: 50%;
+  right: 5px;
+  top: 2.5px;
+  -webkit-animation: spinner .3s infinite linear;
+          animation: spinner .3s infinite linear;
+  border-top: 10px solid tomato;
+}
+
+@-webkit-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+/*# sourceMappingURL=Header.css.map */
