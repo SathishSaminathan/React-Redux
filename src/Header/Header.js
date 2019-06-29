@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Header.css";
+import CustomText from "../Components/CustomText";
 
 function Header(props) {
   const {isLoading}= props
@@ -22,6 +23,7 @@ function Header(props) {
           placeholder={isLoading ? "fetching.....":"search your favourite hotel"}
           disabled={isLoading}
         />
+        <CustomText style={{}}>hai</CustomText>
         {isLoading > 0 && <div className="spinner" />}
       </div>
       <hr />
